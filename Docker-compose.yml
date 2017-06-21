@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  node:
+    build: ./node
+    container_name: node
+    environment:
+      - NODE_PORT=${NODE_PORT}
+      - TEST_MSG=${TEST_MSG}
